@@ -15,7 +15,6 @@ window.onsubmit = (e) => {
 	e.preventDefault();
 }
 
-
 // Button Toggle Menu
 let toggleBtn;
 toggleBtn = () => {
@@ -74,7 +73,6 @@ $('#del-prod').on('click', function () {
 		delSection.classList.remove('show');
 	}
 })
-
 
 btnProd.onclick = () => {
 	admin_title.classList.add('hide');

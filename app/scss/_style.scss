@@ -6,6 +6,7 @@
 
 body {
   padding: 0;
+
   .vertical-nav {
     min-width: 17rem;
     width: 17rem;
@@ -15,6 +16,7 @@ body {
     left: 0;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.4s;
+
   }
 
   .page-content {
@@ -52,15 +54,16 @@ body {
     }
   }
 
-  .account-logo{
+  .account-logo {
     //background-color: white;
     //stroke: white;
   }
 }
 
-.hide{
-  display: none ;
+.hide {
+  display: none;
 }
-.show{
+
+.show {
   display: block;
 }
