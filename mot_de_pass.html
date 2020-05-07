@@ -11,47 +11,29 @@
 
     <!--    style.css-->
     <link href="src/css/main.css" rel="stylesheet">
-
-
 </head>
 
 <body>
     
-    <section class="inscription sec__signup">
-        <h3>Créez votre compte</h3><br>
+    <section class="MDP__oublié sec__signup">
+        <h3>Récuperer votre mot de passe</h3>
         <div class="inscription__ligne"></div><br><br>
-        <div class="inscription__form__container inscription__block col-12 col-sm-6 col-md-3">
+        <p>Mot de passe perdu ? Veuillez saisir votre adresse e-mail.<br> Vous recevrez un lien par e-mail pour créer un nouveau mot de passe.</p><br>
+        <div class="MDP__oublié__form__container inscription__block col-12 col-sm-6 col-md-3">
             <form>
-                <div class="row">
-                    <div class="col">
-                        <label for="exampleInputText1">Nom<span>*</span></label> 
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="col">
-                        <label for="exampleInputText1">Prénom<span>*</span></label> 
-                        <input type="text" class="form-control">
-                    </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">  
                 </div><br>
-                <div class="form-group">
-                    <label for="exampleInputText1">Identifiant<span>*</span></label> 
-                    <input type="text" class="form-control">
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Email<span>*</span></label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1">Mot de passe<span>*</span></label>
-                  <input type="password" class="form-control" id="exampleInputPassword1">
-                </div><br>
-                <button id="s'enregistrer" type="submit" class="btn btn-primary">S'ENREGISTRER</button><br><br>
+                <button type="submit" class="btn btn-primary">Réinitialisation du mot de pass</button><br><br>
                 <div class="login__register__container">
-                    <p>Vous avez déjà un compte ?<br>
+                    <p>Vous vous rappelez de votre mot de passe ?<br>
                         <a href="login.html">Se connecter</a>
                     </p>
                 </div>
               </form>
         </div>
+
     </section>
 
 
