@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   font-family: Poppins, sans-serif;
   font-size: 16px;
@@ -62,7 +63,8 @@ body .login .login__container {
       flex-direction: row;
       justify-content: space-between; }
     body .login .login__container .login__form__container .btn {
-      margin-left: 100px;
+      display: block;
+      margin: auto;
       border: 2px solid #e59233;
       border-radius: 24px;
       background-color: white;
@@ -82,5 +84,40 @@ body .login .login__container {
       margin-top: 5%; }
   body .login .login__container .login__register__container {
     text-align: center; }
+
+.hide {
+  display: none; }
+
+body .sec__signup {
+  margin-top: 80px; }
+  body .sec__signup h3 {
+    text-align: center; }
+  body .sec__signup .inscription__ligne {
+    border-bottom: 3px solid #e59233;
+    width: 150px;
+    margin: auto; }
+  body .sec__signup .inscription__block {
+    margin: auto;
+    max-width: 35% !important;
+    display: block; }
+    body .sec__signup .inscription__block .btn {
+      display: block;
+      margin: auto;
+      border: 2px solid #e59233;
+      border-radius: 24px;
+      background-color: white;
+      color: #ff008c;
+      width: 257px; }
+    body .sec__signup .inscription__block .btn:hover {
+      background: linear-gradient(to right, #ff3399 0%, #ff9900 100%) !important;
+      color: white !important;
+      border: 2px solid #e59233 !important; }
+    body .sec__signup .inscription__block .login__register__container {
+      text-align: center; }
+    body .sec__signup .inscription__block span {
+      color: red; }
+
+body .MDP__oublié p {
+  text-align: center; }
 
 /*# sourceMappingURL=main.css.map */

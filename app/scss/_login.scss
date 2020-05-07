@@ -4,6 +4,8 @@
     margin: 0;
   }
 
+// LOG IN SECTION///////////////////////////////////////////////////
+
 body{
     .login{
         .login__container{
@@ -24,7 +26,8 @@ body{
                 }
 
                 .btn{
-                    margin-left: 100px;
+                    display: block;
+                    margin: auto;
                     border: 2px solid #e59233;
                     border-radius: 24px;
                     background-color: white;
@@ -56,3 +59,65 @@ body{
         }
     }
 }
+
+// SIGN UP SECTION///////////////////////////////////////////////////
+
+.hide{
+    display: none;
+}
+
+body{
+    .sec__signup{
+        margin-top: 80px;
+
+        h3{
+            text-align: center;
+        }
+
+        .inscription__ligne{
+            border-bottom: 3px solid #e59233;
+            width: 150px;
+            margin: auto;
+        }
+
+        .inscription__block{
+            margin: auto;
+            max-width: 35% !important;
+            display: block;
+
+            .btn{
+                display: block;
+                    margin: auto;
+                    border: 2px solid #e59233;
+                    border-radius: 24px;
+                    background-color: white;
+                    color: rgb(255, 0, 140);
+                    width: 257px;
+                }
+                .btn:hover{
+                    background: linear-gradient(to right, #ff3399 0%, #ff9900 100%) !important; 
+                    color: white !important;
+                    border: 2px solid #e59233 !important
+
+            }
+            .login__register__container{
+                text-align: center;
+            }
+            span{
+                color: red;
+            }
+        }
+
+    }
+
+    .MDP__oublié{
+        p{
+            text-align: center;
+        }
+    }
+
+// SIGN UP SECTION///////////////////////////////////////////////////
+
+}
+
+
