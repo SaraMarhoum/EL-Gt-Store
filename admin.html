@@ -21,7 +21,7 @@
             <a href="admin.html">
 
                 <div class="rounded-lg w-75 ml-auto mr-auto mb-5 bg-white">
-                    <img alt="" class="m-2" src="img/logo.svg">
+                    <img alt="" class="m-2" src="src/img/logo.svg">
                 </div>
             </a>
             <h4 class="font-weight-white text-center text-muted mb-lg-4">Admin Panel</h4>
@@ -86,10 +86,10 @@
                 </div>
                 <!--                Price-->
                 <div class="form-group">
-                    <label for="add-prod-price">Price</label>
+                    <label class="d-block" for="add-prod-price">Price</label>
                     <div class="form-group w-auto d-inline-flex">
                         <input class="form-control" id="add-prod-price" placeholder="Price" type="number">
-                        <label for="add-prod-price">DH</label>
+                        <label class="m-2" for="add-prod-price">DH</label>
 
                     </div>
                 </div>
@@ -110,36 +110,35 @@
                     <textarea class="form-control" id="add-prod-desc" placeholder="Description" rows="3"></textarea>
                 </div>
                 <div class="form-group">
-                    <label for="add-prod-img">Example file input</label>
+                    <label for="add-prod-img">Add Product Picture</label>
                     <input class="form-control-file" id="add-prod-img" type="file">
                 </div>
                 <button class="btn btn-success mb-2" type="submit">Confirm</button>
 
             </form>
         </div>
-        <div class="collapse mt-3 p-4" id="edit-collapse">
+        <div class="collapse mt-3  p-4" id="edit-collapse">
             <form>
                 <div class="form-group">
-                    <label for="exampleFormControlInput1">Product ID</label>
+                    <label for="product-id">Product ID</label>
                     <input class="form-control" id="product-id" placeholder="ID" type="number">
                     <!--                    <button class="btn btn-primary mb-2" type="submit">Confirm</button>-->
 
                 </div>
                 <div class="edit-product">
                     <div class="form-group">
-                        <label for="exampleFormControlInput1">Product Name</label>
+                        <label for="product-name">Product Name</label>
                         <input class="form-control" id="product-name" placeholder="Name" type="text">
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlInput2">Short Description</label>
+                        <label for="product-shortDesc">Short Description</label>
                         <input class="form-control" id="product-shortDesc" placeholder="Desc..." type="text">
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlInput3">Price</label>
+                        <label class="d-block" for="product-price">Price</label>
                         <div class="form-group w-auto d-inline-flex">
                             <input class="form-control" id="product-price" placeholder="Price" type="number">
-                            <label for="exampleFormControlInput3">DH</label>
-
+                            <label class="m-2" for="product-price">DH</label>
                         </div>
                     </div>
 
@@ -181,6 +180,8 @@
 
 
     </section>
+
+
     <section class="container hide" id="categories">
         <div class="row d-flex flex-row justify-content-between">
 

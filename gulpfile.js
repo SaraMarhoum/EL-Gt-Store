@@ -16,7 +16,7 @@ function scssTask() {
 	return src(files.scssPath)
 	.pipe(sourcemaps.init()) // initialize sourcemaps first
 	.pipe(sass().on("error", sass.logError)) // compile SCSS to CSS
-	.pipe(postcss([autoprefixer().concat()])) // PostCSS plugins
+	.pipe(postcss([autoprefixer()])) // PostCSS plugins
 	.pipe(sourcemaps.write(".")) // write sourcemaps file in current directory
 	 // put final CSS in dist folder
 	.pipe(dest("./src/css"))
