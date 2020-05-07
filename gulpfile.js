@@ -1,4 +1,4 @@
-const {src, dest,series, watch, parallel} = require("gulp");
+const {src, dest, series, watch, parallel} = require("gulp");
 const sass = require("gulp-sass");
 const autoprefixer = require("autoprefixer");
 const postcss = require("gulp-postcss");
@@ -18,7 +18,7 @@ function scssTask() {
 	.pipe(sass().on("error", sass.logError)) // compile SCSS to CSS
 	.pipe(postcss([autoprefixer()])) // PostCSS plugins
 	.pipe(sourcemaps.write(".")) // write sourcemaps file in current directory
-	 // put final CSS in dist folder
+	// put final CSS in dist folder
 	.pipe(dest("./src/css"))
 	
 };
@@ -38,4 +38,5 @@ function watchTask() {
 		series(parallel(scssTask, jsTask))
 	);
 }
+
 exports.default = series(parallel(scssTask, jsTask), watchTask)
