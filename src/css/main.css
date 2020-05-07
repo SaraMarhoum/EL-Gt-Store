@@ -1,0 +1,48 @@
+* {
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  margin: 0; }
+
+body {
+  padding: 0;
+  /* for toggle behavior */ }
+  body .vertical-nav {
+    min-width: 17rem;
+    width: 17rem;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s; }
+  body .page-content {
+    width: calc(100% - 17rem);
+    margin-left: 17rem;
+    transition: all 0.4s; }
+  body #sidebar.active {
+    margin-left: -17rem; }
+  body #content.active {
+    width: 100%;
+    margin: 0; }
+  @media (max-width: 768px) {
+    body #sidebar {
+      margin-left: -17rem; }
+    body #sidebar.active {
+      margin-left: 0; }
+    body #content {
+      width: 100%;
+      margin: 0; }
+    body #content.active {
+      margin-left: 17rem;
+      width: calc(100% - 17rem); } }
+
+.hide {
+  display: none; }
+
+.show {
+  display: block; }
+
+.btn-success {
+  background-color: yellow; }
+
+/*# sourceMappingURL=main.css.map */
