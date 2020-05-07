@@ -85,9 +85,6 @@ body .login .login__container {
   body .login .login__container .login__register__container {
     text-align: center; }
 
-.hide {
-  display: none; }
-
 body .sec__signup {
   margin-top: 80px; }
   body .sec__signup h3 {
@@ -119,5 +116,8 @@ body .sec__signup {
 
 body .MDP__oublié p {
   text-align: center; }
+
+body .hide {
+  display: none; }
 
 /*# sourceMappingURL=main.css.map */

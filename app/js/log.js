@@ -1,4 +1,4 @@
-let motDePasse = document.getElementById("MDP_oublié");
+let motDePasse = document.getElementById("mdp_oublié");
 const seConnecter = document.getElementById("seConnecter");
 const sEnregistrer = document.getElementById("s'enregistrer");
 let section = document.querySelectorAll(".sec__signup");
