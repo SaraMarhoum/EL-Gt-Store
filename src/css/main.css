@@ -43,7 +43,8 @@ body {
   display: block; }
 
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  text-decoration: none; }
 
 .carousel-caption {
   width: 100% !important;
@@ -92,6 +93,8 @@ body {
   .container .promo {
     width: 40%;
     border-radius: 0 50% 50% 0; }
+  .container .card {
+    width: 24rem; }
 
 @media (max-width: 1600px) {
   .container {
@@ -107,12 +110,17 @@ body {
         width: 50%; } }
 
 @media (max-width: 900px) {
-  .test,
-  .main__populaire__part2 {
+  .container .test,
+  .container .main__populaire__part2 {
     width: 100% !important;
     height: auto;
     margin: 0 auto; }
-  .main__populaire {
+  .container .main__populaire {
+    flex-wrap: wrap; }
+  .container .card {
+    width: 70%;
+    margin: 0 auto; }
+  .container .cards__item {
     flex-wrap: wrap; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -4,6 +4,7 @@ $color3:#F99436;
 
 * {
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 .carousel-caption {
@@ -92,6 +93,11 @@ $color3:#F99436;
     width: 40%;
     border-radius: 0 50% 50% 0;
   }
+
+  .card {
+    width: 24rem;
+
+  }
 }
 
 @media (max-width: 1600px) {
@@ -115,19 +121,32 @@ $color3:#F99436;
         width: 50%;
       }
     }
+
+
   }
 }
 
 @media (max-width: 900px) {
+  .container {
 
-  .test,
-  .main__populaire__part2 {
-    width: 100% !important;
-    height: auto;
-    margin: 0 auto
-  }
+    .test,
+    .main__populaire__part2 {
+      width: 100% !important;
+      height: auto;
+      margin: 0 auto
+    }
 
-  .main__populaire {
-    flex-wrap: wrap;
+    .main__populaire {
+      flex-wrap: wrap;
+    }
+
+    .card {
+      width: 70%;
+      margin: 0 auto;
+    }
+
+    .cards__item {
+      flex-wrap: wrap;
+    }
   }
 }
