@@ -1,0 +1,83 @@
+$color1:#F92279;
+$color2:#F95C57;
+$color3:#F99436;
+
+* {
+  box-sizing: border-box;
+}
+
+.carousel-caption {
+  width: 100% !important;
+  bottom: 30%;
+  left: 0%;
+
+  h5 {
+    color: $color3;
+  }
+
+  p {
+    font-size: 1.4em;
+    margin: 3% 0;
+  }
+
+  button {
+    font-weight: 700;
+    color: white;
+    background: #F92279;
+    background: -moz-linear-gradient(-45deg, #F92279 0%, #F95C57 50%, #F99436 100%);
+    background: -webkit-linear-gradient(-45deg, #F92279 0%, #F95C57 50%, #F99436 100%);
+    background: linear-gradient(135deg, #F92279 0%, #F95C57 50%, #F99436 100%);
+  }
+
+  button:hover {
+    border: 2px solid $color1;
+    background: #F99436;
+    background: -moz-linear-gradient(left, #F99436 0%, #F95C57 50%, #F92279 100%);
+    background: -webkit-linear-gradient(left, #F99436 0%, #F95C57 50%, #F92279 100%);
+    background: linear-gradient(to right, #F99436 0%, #F95C57 50%, #F92279 100%);
+  }
+}
+
+
+.carousel-item {
+  img {
+    width: 100%;
+    height: 90vh;
+  }
+}
+
+@media (max-width: 900px) {
+  .carousel-item {
+    img {
+      height: 70vh;
+    }
+  }
+
+  .carousel-caption {
+    h5 {
+      font-size: 3em;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin: 3% 0;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .carousel-caption {
+    h5 {
+      font-size: 2.2em;
+    }
+
+    p {
+      font-size: 1em;
+      margin: 3% 0;
+    }
+
+    button {
+      padding: 1em 2em !important;
+    }
+  }
+}
