@@ -86,4 +86,33 @@ body {
   .carousel-caption button {
     padding: 1em 2em !important; } }
 
+.container {
+  max-width: 1650px;
+  margin: 0 auto; }
+  .container .promo {
+    width: 40%;
+    border-radius: 0 50% 50% 0; }
+
+@media (max-width: 1600px) {
+  .container {
+    max-width: 1200px; }
+    .container .test {
+      width: 45%;
+      height: auto; }
+    .container .main__populaire__part2 {
+      width: 45%; }
+      .container .main__populaire__part2 .test2 {
+        width: 100%; }
+      .container .main__populaire__part2 img {
+        width: 50%; } }
+
+@media (max-width: 900px) {
+  .test,
+  .main__populaire__part2 {
+    width: 100% !important;
+    height: auto;
+    margin: 0 auto; }
+  .main__populaire {
+    flex-wrap: wrap; } }
+
 /*# sourceMappingURL=main.css.map */

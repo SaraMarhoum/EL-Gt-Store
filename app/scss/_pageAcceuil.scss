@@ -81,3 +81,53 @@ $color3:#F99436;
     }
   }
 }
+
+////////////end caroussel ////////////////////////
+/////////////////////main////////////////
+.container {
+  max-width: 1650px;
+  margin: 0 auto;
+
+  .promo {
+    width: 40%;
+    border-radius: 0 50% 50% 0;
+  }
+}
+
+@media (max-width: 1600px) {
+  .container {
+    max-width: 1200px;
+
+
+    .test {
+      width: 45%;
+      height: auto;
+    }
+
+    .main__populaire__part2 {
+      width: 45%;
+
+      .test2 {
+        width: 100%;
+      }
+
+      img {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+
+  .test,
+  .main__populaire__part2 {
+    width: 100% !important;
+    height: auto;
+    margin: 0 auto
+  }
+
+  .main__populaire {
+    flex-wrap: wrap;
+  }
+}
