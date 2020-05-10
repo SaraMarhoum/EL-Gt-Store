@@ -2,10 +2,141 @@ $color1:#F92279;
 $color2:#F95C57;
 $color3:#F99436;
 
+
+
 * {
   box-sizing: border-box;
   text-decoration: none;
 }
+
+/////////////////nav////////////////
+.container__nav {
+  width: 1440px;
+  margin: 0 auto;
+
+  .nav {
+    &__part1 {
+      display: flex;
+      justify-content: space-between;
+
+      img {
+        width: 14em;
+      }
+
+      .icona {
+        display: none;
+      }
+
+      .input {
+        display: flex;
+        width: 50%;
+
+        input {
+          border-radius: 50px;
+          width: 100%;
+          height: 50%;
+          margin-top: 1.2em;
+        }
+
+        a {
+          position: relative;
+          right: 7%;
+        }
+      }
+
+      i {
+        margin-top: 1.8em;
+
+        span {
+          display: none;
+        }
+      }
+
+    }
+
+    &__part2 {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media (max-width: 1450px) {
+
+  .container__nav {
+    width: 1020px !important;
+
+  }
+}
+
+@media (max-width: 1040px) {
+  .container__nav {
+    .nav__part1 {
+      flex-direction: column;
+
+      .responsive {
+        display: flex;
+        justify-content: space-between;
+
+        .icona {
+          display: block;
+        }
+      }
+
+    }
+
+    .nav__part2,
+    .icon {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1040px) {
+  .container__nav {
+    width: 700px !important;
+
+    .nav__part1 {
+      .input {
+        margin: 0px auto;
+        width: 80%;
+
+        input {
+          margin-top: 1em;
+          padding: 10px 3px;
+        }
+      }
+    }
+
+  }
+}
+
+@media (max-width: 700px) {
+  .container__nav {
+    width: 375px !important;
+
+    .nav__part1 {
+      .input {
+
+        width: 90%;
+
+        a {
+          right: 10%;
+        }
+
+      }
+
+      .icona {
+        margin-right: 10px;
+      }
+    }
+  }
+
+}
+
+/////////////end nav//////////////////////
+
+//////////////////caroussel////////////
 
 .carousel-caption {
   width: 100% !important;
@@ -14,6 +145,7 @@ $color3:#F99436;
 
   h5 {
     color: $color3;
+    font-weight: 700;
   }
 
   p {
@@ -24,6 +156,7 @@ $color3:#F99436;
   button {
     font-weight: 700;
     color: white;
+    border: 2px solid $color1;
     background: #F92279;
     background: -moz-linear-gradient(-45deg, #F92279 0%, #F95C57 50%, #F99436 100%);
     background: -webkit-linear-gradient(-45deg, #F92279 0%, #F95C57 50%, #F99436 100%);
@@ -32,20 +165,32 @@ $color3:#F99436;
 
   button:hover {
     border: 2px solid $color1;
-    background: #F99436;
-    background: -moz-linear-gradient(left, #F99436 0%, #F95C57 50%, #F92279 100%);
-    background: -webkit-linear-gradient(left, #F99436 0%, #F95C57 50%, #F92279 100%);
-    background: linear-gradient(to right, #F99436 0%, #F95C57 50%, #F92279 100%);
-  }
-}
+    background: transparent;
+    // color: -moz-linear-gradient(left, #F99436 0%, #F95C57 50%, #F92279 100%);
+    // color: -webkit-linear-gradient(left, #F99436 0%, #F95C57 50%, #F92279 100%);
+    // color: linear-gradient(to right, #F99436 0%, #F95C57 50%, #F92279 100%);
+    color: $color1;
 
+  }
+
+}
 
 .carousel-item {
   img {
     width: 100%;
     height: 90vh;
   }
+
+
 }
+
+.card-body {
+  p {
+    margin-bottom: 0px;
+  }
+}
+
+
 
 @media (max-width: 900px) {
   .carousel-item {
@@ -69,17 +214,32 @@ $color3:#F99436;
 @media (max-width: 600px) {
   .carousel-caption {
     h5 {
-      font-size: 2.2em;
+      font-size: 1.8em;
     }
 
     p {
-      font-size: 1em;
-      margin: 3% 0;
+      font-size: 0.9em;
+      margin: 4% 0;
     }
 
     button {
-      padding: 1em 2em !important;
+      padding: 0.5em 1em !important;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      font-weight: 500;
     }
+  }
+
+  .carousel-item {
+    img {
+      height: 60vh;
+    }
+  }
+}
+
+@media (max-width: 376px) {
+  .cart:nth-child(2) {
+    display: none;
   }
 }
 

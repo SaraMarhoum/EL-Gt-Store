@@ -1,3 +1,4 @@
+$
 // BTN
 let addSection = document.getElementById('add-collapse');
 let editSection = document.getElementById('edit-collapse');
