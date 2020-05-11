@@ -105,6 +105,14 @@ body {
       .productSection .product_details .quantity .quantity_selector span {
         font-weight: 500;
         color: #232530; }
+      .productSection .product_details .quantity .quantity_selector .plus,
+      .productSection .product_details .quantity .quantity_selector .minus {
+        padding-left: 14px;
+        padding-right: 14px;
+        cursor: pointer; }
+      .productSection .product_details .quantity .quantity_selector .plus:hover,
+      .productSection .product_details .quantity .quantity_selector .minus:hover {
+        color: #b5aec4; }
     .productSection .product_details .quantity .add_to_cart_button {
       width: 160px;
       margin-left: 19px;
@@ -130,5 +138,35 @@ body {
         text-align: center;
         line-height: 40px;
         width: 100%; }
+
+.product_benefit {
+  margin-top: 74px; }
+  .product_benefit .benefit_row {
+    padding-left: 15px;
+    padding-right: 15px; }
+    .product_benefit .benefit_row .benefit_col {
+      padding: 0; }
+      .product_benefit .benefit_row .benefit_col .benefit_item {
+        height: 100px;
+        background: #f3f3f3;
+        border-right: solid 1px #FFFFFF;
+        padding-left: 25px; }
+        .product_benefit .benefit_row .benefit_col .benefit_item .benefit_icon i {
+          font-size: 30px;
+          color: #fe4c50; }
+        .product_benefit .benefit_row .benefit_col .benefit_item .benefit_content {
+          padding-left: 22px; }
+          .product_benefit .benefit_row .benefit_col .benefit_item .benefit_content h6 {
+            text-transform: uppercase;
+            line-height: 18px;
+            font-weight: 500;
+            margin-bottom: 0; }
+          .product_benefit .benefit_row .benefit_col .benefit_item .benefit_content p {
+            font-size: 12px;
+            line-height: 18px;
+            margin-bottom: 0;
+            color: #51545f; }
+      .product_benefit .benefit_row .benefit_col .benefit_col:last-child .benefit_item {
+        border-right: none; }
 
 /*# sourceMappingURL=main.css.map */
