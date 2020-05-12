@@ -72,7 +72,6 @@ $('#del-prod').on('click', function () {
 		addSection.classList.remove('show')
 	} else {
 		delSection.classList.remove('show');
-		
 	}
 })
 
@@ -82,6 +81,7 @@ btnProd.onclick = () => {
 	cats.classList.add('hide');
 	prod.classList.remove('hide');
 };
+
 btncats.onclick = () => {
 	admin_title.classList.add('hide');
 	prod.classList.add('hide');
