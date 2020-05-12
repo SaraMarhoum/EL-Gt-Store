@@ -36,6 +36,7 @@ $color3:#F99436;
           width: 100%;
           height: 50%;
           margin-top: 1.2em;
+          padding: 10px
         }
 
         a {
@@ -58,6 +59,10 @@ $color3:#F99436;
       display: flex;
       justify-content: space-between;
     }
+
+    &__part3 {
+      display: none;
+    }
   }
 }
 
@@ -78,6 +83,7 @@ $color3:#F99436;
         display: flex;
         justify-content: space-between;
 
+
         .icona {
           display: block;
         }
@@ -88,6 +94,14 @@ $color3:#F99436;
     .nav__part2,
     .icon {
       display: none;
+    }
+
+    .nav__part3 {
+      background-color: rgba($color: #000000, $alpha: 0.4);
+      padding: 1em;
+      position: relative;
+      justify-content: flex-end;
+      flex-direction: column;
     }
   }
 }
@@ -103,7 +117,7 @@ $color3:#F99436;
 
         input {
           margin-top: 1em;
-          padding: 10px 3px;
+
         }
       }
     }
