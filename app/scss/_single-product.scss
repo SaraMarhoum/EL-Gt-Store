@@ -115,6 +115,7 @@
       }
 
       .red_button {
+
         display: inline-flex;
         flex-direction: column;
         justify-content: center;
@@ -122,14 +123,11 @@
         width: 200px;
         height: 40px;
         //TODO color From Mixin
-        background: #fe4c50;
+        background: linear-gradient(to right, #ff9900 0%, #ff3399 100%) !important;
+
         border-radius: 3px;
         transition: all 0.3s ease;
 
-        &:hover {
-          //TODO color From Mixin
-          background: #FE7C7F !important;
-        }
 
         a {
           display: block;
@@ -140,7 +138,17 @@
           text-align: center;
           line-height: 40px;
           width: 100%;
+          margin-top: 2px;
+          text-decoration: none;
         }
+
+        &:hover {
+          //TODO color From Mixin
+          //background: #FE7C7F !important;
+          background: linear-gradient(to right, #ff3399 0%, #ff9900 100%) !important;
+
+        }
+
       }
 
     }
@@ -149,6 +157,7 @@
   }
 
 }
+
 .product_benefit {
   margin-top: 74px;
 
