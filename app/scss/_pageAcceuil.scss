@@ -12,7 +12,7 @@ $color3:#F99436;
 /////////////////nav////////////////
 .container__nav {
   width: 1440px;
-  margin: 0 auto;
+  margin: 1em auto;
 
   .nav {
     &__part1 {
@@ -59,10 +59,6 @@ $color3:#F99436;
       display: flex;
       justify-content: space-between;
     }
-
-    &__part3 {
-      display: none;
-    }
   }
 }
 
@@ -76,6 +72,8 @@ $color3:#F99436;
 
 @media (max-width: 1040px) {
   .container__nav {
+    position: relative;
+
     .nav__part1 {
       flex-direction: column;
 
@@ -91,17 +89,26 @@ $color3:#F99436;
 
     }
 
-    .nav__part2,
     .icon {
       display: none;
     }
 
-    .nav__part3 {
-      background-color: rgba($color: #000000, $alpha: 0.4);
-      padding: 1em;
-      position: relative;
-      justify-content: flex-end;
+    .active {
+      display: none;
+    }
+
+    .nav__part2 {
+      background: rgba(#000, .8);
+      padding: 3em;
+      position: absolute;
+      top: 45%;
+      right: 0%;
+      z-index: 9999;
       flex-direction: column;
+      line-height: 2;
+      text-align: right;
+      color: $color3;
+      border-radius: 10px;
     }
   }
 }
