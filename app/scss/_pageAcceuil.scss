@@ -25,6 +25,21 @@ $color3:#F99436;
 
       .icona {
         display: none;
+        font-size: 2em;
+        color: $color3;
+        border-radius: 10px;
+      }
+
+      .icon,
+      .icon--color {
+        color: $color3;
+        height: 2em;
+        // height: 4em;
+        font-size: 2em;
+
+        &--color {
+          color: black;
+        }
       }
 
       .input {
@@ -46,7 +61,7 @@ $color3:#F99436;
       }
 
       i {
-        margin-top: 1.8em;
+        margin-top: 0.8em;
 
         span {
           display: none;
@@ -123,7 +138,7 @@ $color3:#F99436;
         width: 80%;
 
         input {
-          margin-top: 1em;
+          margin-right: -2em;
 
         }
       }
@@ -221,6 +236,8 @@ $color3:#F99436;
   }
 
   .carousel-caption {
+    bottom: 10%;
+
     h5 {
       font-size: 3em;
     }
@@ -234,6 +251,8 @@ $color3:#F99436;
 
 @media (max-width: 600px) {
   .carousel-caption {
+
+
     h5 {
       font-size: 1.8em;
     }
@@ -329,5 +348,33 @@ $color3:#F99436;
     .cards__item {
       flex-wrap: wrap;
     }
+  }
+}
+
+//////////////////footer////////////////////////////
+.footer {
+  background: black;
+
+  &__part {
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 5%;
+  }
+
+  &__flex {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.8;
+    color: white;
+
+    a {
+      color: white;
+    }
+  }
+
+  p {
+    color: white;
+    text-align: center;
+    font-weight: 700;
   }
 }

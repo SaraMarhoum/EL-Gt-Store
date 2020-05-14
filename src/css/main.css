@@ -55,7 +55,18 @@ body {
     .container__nav .nav__part1 img {
       width: 14em; }
     .container__nav .nav__part1 .icona {
-      display: none; }
+      display: none;
+      font-size: 2em;
+      color: #F99436;
+      border-radius: 10px; }
+    .container__nav .nav__part1 .icon,
+    .container__nav .nav__part1 .icon--color {
+      color: #F99436;
+      height: 2em;
+      font-size: 2em; }
+      .container__nav .nav__part1 .icon--color,
+      .container__nav .nav__part1 .icon--color--color {
+        color: black; }
     .container__nav .nav__part1 .input {
       display: flex;
       width: 50%; }
@@ -69,7 +80,7 @@ body {
         position: relative;
         right: 7%; }
     .container__nav .nav__part1 i {
-      margin-top: 1.8em; }
+      margin-top: 0.8em; }
       .container__nav .nav__part1 i span {
         display: none; }
   .container__nav .nav__part2 {
@@ -114,7 +125,7 @@ body {
       margin: 0px auto;
       width: 80%; }
       .container__nav .nav__part1 .input input {
-        margin-top: 1em; } }
+        margin-right: -2em; } }
 
 @media (max-width: 700px) {
   .container__nav {
@@ -157,11 +168,13 @@ body {
 @media (max-width: 900px) {
   .carousel-item img {
     height: 70vh; }
-  .carousel-caption h5 {
-    font-size: 3em; }
-  .carousel-caption p {
-    font-size: 1.2em;
-    margin: 3% 0; } }
+  .carousel-caption {
+    bottom: 10%; }
+    .carousel-caption h5 {
+      font-size: 3em; }
+    .carousel-caption p {
+      font-size: 1.2em;
+      margin: 3% 0; } }
 
 @media (max-width: 600px) {
   .carousel-caption h5 {
@@ -216,5 +229,23 @@ body {
     margin: 0 auto; }
   .container .cards__item {
     flex-wrap: wrap; } }
+
+.footer {
+  background: black; }
+  .footer__part {
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 5%; }
+  .footer__flex {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.8;
+    color: white; }
+    .footer__flex a {
+      color: white; }
+  .footer p {
+    color: white;
+    text-align: center;
+    font-weight: 700; }
 
 /*# sourceMappingURL=main.css.map */
