@@ -124,4 +124,74 @@ body .sec__signup {
 body .MDP__oublié p {
   text-align: center; }
 
+.checkCard__collection {
+  line-height: 1.8; }
+  .checkCard__collection .checkCard__wrapup {
+    border-style: dashed; }
+  .checkCard__collection .checkCard__product--image {
+    height: 140px;
+    width: 111px; }
+  .checkCard__collection .checkCard__product-description {
+    line-height: 0.8;
+    font-size: 14px; }
+    .checkCard__collection .checkCard__product-description .custom-select:focus {
+      border-color: #F92678 !important;
+      box-shadow: none !important; }
+    .checkCard__collection .checkCard__product-description .checkCard__product--coperative {
+      font-size: 12px;
+      color: rgba(0, 0, 0, 0.434); }
+    .checkCard__collection .checkCard__product-description .checkCard__product--subtitle {
+      font-size: 14px; }
+  .checkCard__collection .checkCard__remove {
+    background-color: whitesmoke;
+    color: #000; }
+    .checkCard__collection .checkCard__remove:focus {
+      border-color: #F92678 !important;
+      box-shadow: none !important; }
+
+.finaliser_commande {
+  background-color: #F92678;
+  background: linear-gradient(to right, #ff3399 0%, #ff9900 100%);
+  border-color: #F92678 !important;
+  box-shadow: none !important;
+  color: white;
+  width: 100%; }
+  .finaliser_commande:hover {
+    color: whitesmoke; }
+  @media (max-width: 500px) {
+    .finaliser_commande {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      z-index: 20; } }
+
+@media (max-width: 500px) {
+  .test {
+    height: 20px; } }
+
+.detail__montant {
+  line-height: 1.9; }
+
+.vendeur__pannel {
+  background-color: rgba(238, 238, 238, 0.952);
+  color: #000;
+  font-weight: 400; }
+  .vendeur__pannel h5 {
+    font-weight: bold; }
+    @media (max-width: 667px) {
+      .vendeur__pannel h5 {
+        text-align: center;
+        margin-top: 32px; } }
+  .vendeur__pannel p {
+    font-size: 14px; }
+  .vendeur__pannel img {
+    border: 3px solid #F92678; }
+    @media (max-width: 667px) {
+      .vendeur__pannel img {
+        margin-left: 50% !important; } }
+
+.vendeur__sorting-input .form-control:focus {
+  border-color: #F92678 !important;
+  box-shadow: none !important; }
+
 /*# sourceMappingURL=main.css.map */
