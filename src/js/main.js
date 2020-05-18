@@ -31,6 +31,11 @@ $(document).ready(function () {
     });
 });
 
+$(".icona").click((e) => {
+  $(".nav__part2").toggleClass("active");
+});
+$(".icona").css("cursor", "grab");
+
 // BTN
 let addSection = document.getElementById('add-collapse');
 let editSection = document.getElementById('edit-collapse');
