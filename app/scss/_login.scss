@@ -66,7 +66,7 @@ body{
 
 body{
     .sec__signup{
-        margin-top: 80px;
+        // margin-top: 80px;
         background-image: url(/assets/png/background_signup.jpg);
         background-position: center;
         background-repeat: no-repeat;
@@ -74,9 +74,12 @@ body{
         background-attachment: fixed ;
         color: white;
         font-weight: bolder;
+        padding-bottom: 1px;
 
         h3{
             text-align: center;
+            padding-top: 33px;
+            font-weight: bolder;
         }
 
         .inscription__ligne{
